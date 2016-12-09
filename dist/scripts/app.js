@@ -21,6 +21,11 @@
          })
          .state('room', {
              url: '/newRoom',
+              bindings: {
+                resolve: '<',
+                close: '&',
+                dismiss: '&'
+              },
              views: {
                 'chatRooms': {
                     templateUrl: './templates/rooms.html',
@@ -28,13 +33,13 @@
                 },
                 'content': {
                     templateUrl: './templates/newRoom.html',
-                    controller: 'ModalCtrl as modal'
+                    controller: 'ModalCtrl as $ctrl'
                 }
             }
          });
      }
  
      angular
-         .module('blocChat', ['ui.router', 'firebase'])
+         .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap', 'ngAnimate'])
          .config(config);
  })();
