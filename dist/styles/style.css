@@ -10,12 +10,8 @@
 	font-weight: bold; 
 	font-family:verdana;
 	color: black;
-	text-decoration: none;
 }
 
-.logo:hover, .logo:active, .logo:visited {
-    text-decoration:none;
-}
 
 .room-button{
 	position: absolute;

@@ -7,18 +7,34 @@
          });
          $stateProvider
          .state('landing', {
-             url: '/',
-             controller: 'LandingCtrl as landing',
-             templateUrl: './templates/landing.html'
+            url: '/',
+            views: {
+                'chatRooms': {
+                    templateUrl: './templates/rooms.html',
+                    controller: 'LandingCtrl as landing'
+                },
+                'content': {
+                    templateUrl: './templates/landing.html',
+                    controller: 'LandingCtrl as landing'
+                }
+            }
          })
          .state('room', {
              url: '/newRoom',
-             controller: 'RoomCtrl as Room',
-             templateUrl: './templates/newRoom.html'
+             views: {
+                'chatRooms': {
+                    templateUrl: './templates/rooms.html',
+                    controller: 'LandingCtrl as landing'
+                },
+                'content': {
+                    templateUrl: './templates/newRoom.html',
+                    controller: 'ModalCtrl as modal'
+                }
+            }
          });
      }
  
      angular
-         .module('blocChat', ['ui.router', 'firebase', 'uibModal'])
+         .module('blocChat', ['ui.router', 'firebase'])
          .config(config);
  })();
