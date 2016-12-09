@@ -1,9 +1,9 @@
 (function() {
-     function LandingCtrl() {
-     	this.heroTitle = "Chatty Chats!";
+     function LandingCtrl(Room) {
+     	this.rooms = Room["all"];
      }
  
      angular
          .module('blocChat')
-         .controller('LandingCtrl', LandingCtrl);
+         .controller('LandingCtrl', ['Room', LandingCtrl]);
  })();

@@ -1,9 +1,8 @@
 .navbar{
 	background-color: #F2F3F4;
-	width: 20%;
-	height: 100%;
-	position: absolute;
-	padding: 5px 5px 5px 5px;
+	width: 300px;
+	height: 5%;
+	position:relative;
 }
 
 .logo{
@@ -19,13 +18,10 @@
 }
 
 .room-button{
-	right: 0px;
-	font-size: 0.7rem;
-	padding: 5px 5px 5px 5px;
-	margin-left: 60px;
 	position: absolute;
-	right: 10px;
-	top: 7px;
+	right: 3px;
+	top: 3px;
+	font-size: 0.7rem;
 	border-radius: 5px;
 	width: 100px;
 	background-color: #F2EFEF;
@@ -33,6 +29,8 @@
 
 .chat-room{
 	font-size: 1rem;
+	margin-top: 0px;
+	width:300px;
 	margin-top: 10px;
 }
 

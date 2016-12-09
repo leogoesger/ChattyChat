@@ -12,13 +12,13 @@
              templateUrl: './templates/landing.html'
          })
          .state('room', {
-             url: '/room',
+             url: '/newRoom',
              controller: 'RoomCtrl as Room',
-             templateUrl: './templates/home.html'
+             templateUrl: './templates/newRoom.html'
          });
      }
  
      angular
-         .module('blocChat', ['ui.router', 'firebase'])
+         .module('blocChat', ['ui.router', 'firebase', 'uibModal'])
          .config(config);
  })();
