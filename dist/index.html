@@ -8,28 +8,15 @@
 <body>
 
 	<nav class="navbar"> <!-- navigation bar -->
-        <a ui-sref="home" class="logo">
-        Link to home
-        </a>
-        <div class="links-container">
-            <a ui-sref="collection" class="navbar-link">collection</a>
-        </div>
+        <a ui-sref="landing" class="logo">Bloc Chat</a>
+        <button ui-sref="room" class="room-button">New Room</button>
+    	<ui-view></ui-view>
     </nav>
-
-	<button onclick="myFunction()">{{2 + 2}}</button>
-	
-    
-	<!-- Angular -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-	<!-- Angular UI router-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-	<!-- Firebase -->
 	<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
-	<!-- AngularFire -->
 	<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-
 	<script>
-	  // Initialize Firebase
 	  var config = {
 	    apiKey: "AIzaSyBxv7DRYCRm1a3GhU2ioIk2LFtokDxH2Gw",
 	    authDomain: "bloc-chat-cc807.firebaseapp.com",
@@ -40,8 +27,10 @@
 	  firebase.initializeApp(config);
 	</script>
 
-	<script src="./scripts/index.js"></script>
-	<script src="./scripts/app.js"></script>
+	<script src="/scripts/app.js"></script>
+	<script src="/scripts/Controllers/LandingCtrl.js"></script>
+	<script src="/scripts/Controllers/RoomCtrl.js"></script>
+	<script src="/scripts/Services/Room.js"></script>
 
 </body>
 </html>
