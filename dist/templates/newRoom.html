@@ -1,18 +1,11 @@
-<div class="modal-demo">
-    <button type="button" class="btn btn-default" ng-click="$ctrl.open()">Open me!</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.open('lg')">Large modal</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.open('sm')">Small modal</button>
-    <button type="button" 
-        class="btn btn-default" 
-        ng-click="$ctrl.open('sm', '.modal-parent')">
-            Modal appended to a custom parent
-    </button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.toggleAnimation()">Toggle Animation ({{ $ctrl.animationsEnabled }})</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.openComponentModal()">Open a component modal!</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.openMultipleModals()">
-        Open multiple modals at once 
-    </button>
-    <div ng-show="$ctrl.selected">Selection from a modal: {{ $ctrl.selected }}</div>
-    <div class="modal-parent">
-    </div>
+<div>
+  <form novalidate class="simple-form">
+  	<label>Create new room</label><br />
+  	<label>Enter a room name</label><br />
+    <input type="text" ng-model="room.name" /><br />
+    <input type="button" ng-click="reset()" value="Cancel" />
+    <input type="submit" ng-click="update(room)" value="Create" />
+  </form>
+  <pre>room = {{room | json}}</pre>
+  <pre>master = {{master | json}}</pre>
 </div>

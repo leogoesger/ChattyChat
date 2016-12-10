@@ -1,32 +1,24 @@
 (function() {
-     function ModalCtrl($uibModal, $log, $document) {
-     	  var $ctrl = this;
-		  $ctrl.items = ['item1', 'item2', 'item3'];
+     function ModalCtrl($scope, Room) {
+     	  $scope.master = {};
 
-		  $ctrl.animationsEnabled = false;
+      $scope.update = function(room) {
+        $scope.master = angular.copy(room);
+        Room["all"].$add({ Name : room.name }).then(function(ref) {
+		  var id = ref.key;
+		  console.log("added record with id " + id);
+		  Room["all"].$indexFor(id); // returns location in the array
+		});
+      };
 
-		  $ctrl.open = function (size, parentSelector) {
-		    var parentElem = parentSelector ? 
-		      angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
-		    var modalInstance = $uibModal.open({
-		      animation: $ctrl.animationsEnabled,
-		      ariaLabelledBy: 'modal-title',
-		      ariaDescribedBy: 'modal-body',
-		      templateUrl: 'myModalContent.html',
-		      controller: 'ModalInstanceCtrl',
-		      controllerAs: '$ctrl',
-		      size: size,
-		      appendTo: parentElem,
-		      resolve: {
-		        items: function () {
-		          return $ctrl.items;
-		        }
-		      }
-		    })
-		  };
+      $scope.reset = function() {
+        $scope.room = angular.copy($scope.master);
+      };
+
+      $scope.reset();
      }
  
      angular
          .module('blocChat')
-         .controller('ModalCtrl', ['$uibModal', '$log', '$document', ModalCtrl]);
+         .controller('ModalCtrl', ['$scope', 'Room', ModalCtrl]);
  })();

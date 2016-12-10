@@ -33,13 +33,13 @@
                 },
                 'content': {
                     templateUrl: './templates/newRoom.html',
-                    controller: 'ModalCtrl as $ctrl'
+                    controller: 'ModalCtrl as modal'
                 }
             }
          });
      }
  
      angular
-         .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap', 'ngAnimate'])
+         .module('blocChat', ['ui.router', 'firebase', 'ngAnimate'])
          .config(config);
  })();
