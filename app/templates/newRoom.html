@@ -1,11 +1,9 @@
-<div>
+<div class="modal">
   <form novalidate class="simple-form">
-  	<label>Create new room</label><br />
+  	<h3>Create new room</h3>
   	<label>Enter a room name</label><br />
     <input type="text" ng-model="room.name" /><br />
-    <input type="button" ng-click="reset()" value="Cancel" />
+    <button onclick="location.href = '/';">Cancel</button>
     <input type="submit" ng-click="update(room)" value="Create" />
   </form>
-  <pre>room = {{room | json}}</pre>
-  <pre>master = {{master | json}}</pre>
 </div>

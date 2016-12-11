@@ -1,5 +1,13 @@
 .modal{
-	display: inline-block;
-	margin-left: 20px;
+	margin-left: 40px;
+	margin-top: 50px;
 	float: left;
+	height: 140px;
+	width: 400px;
+	background-color: #F2F3F4;
+}
+
+.modal form{
+	width: 50%;
+	margin: 0 auto;
 }

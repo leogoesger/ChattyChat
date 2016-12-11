@@ -36,6 +36,24 @@
                     controller: 'ModalCtrl as modal'
                 }
             }
+         })
+         .state('chats', {
+             url: '/chats',
+              bindings: {
+                resolve: '<',
+                close: '&',
+                dismiss: '&'
+              },
+             views: {
+                'chatRooms': {
+                    templateUrl: './templates/rooms.html',
+                    controller: 'LandingCtrl as landing'
+                },
+                'content': {
+                    templateUrl: './templates/chats.html',
+                    controller: 'ChatCtrl as chat'
+                }
+            }
          });
      }
  

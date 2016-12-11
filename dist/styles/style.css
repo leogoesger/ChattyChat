@@ -1,12 +1,14 @@
 html body{
     height: 100vh;
     margin: 0px 0px 0px 0px;
+    font-family:verdana;
 }
 
 .navbar{
 	display: inline-block;
 	float: left;
 	background-color: #F2F3F4;
+	padding-top: 20px;
 	width: 300px;
 	height: 100%;
 }
@@ -33,4 +35,20 @@ html body{
 	font-size: 1rem;
 	margin-top: 10px;
 	margin-left: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
