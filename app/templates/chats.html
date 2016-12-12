@@ -1,1 +1,5 @@
-{{chat.room.currentRoom["Name"]}}
+<a>{{chat.room.currentRoom['Name']}}</a>
+
+<div ng-repeat="chat in chat.message.msg" class="chat">
+	<a>{{ chat["content"] }}</a>
+</div>

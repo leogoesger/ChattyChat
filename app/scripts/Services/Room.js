@@ -16,7 +16,6 @@
 
     Room.setRoom = function(room){
       Room.currentRoom = room;
-      console.log(Room.currentRoom);
     }
 
     return Room;
