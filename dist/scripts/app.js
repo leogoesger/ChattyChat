@@ -8,6 +8,11 @@
          $stateProvider
          .state('landing', {
             url: '/',
+            bindings: {
+                resolve: '<',
+                close: '&',
+                dismiss: '&'
+              },
             views: {
                 'chatRooms': {
                     templateUrl: './templates/rooms.html',
@@ -33,7 +38,7 @@
                 },
                 'content': {
                     templateUrl: './templates/newRoom.html',
-                    controller: 'ModalCtrl as modal'
+                    controller: 'NewRoomCtrl as newRoom'
                 }
             }
          })
@@ -51,7 +56,7 @@
                 },
                 'content': {
                     templateUrl: './templates/chats.html',
-                    controller: 'ChatCtrl as chat'
+                    controller: 'ChatRoomCtrl as chat'
                 }
             }
          });
