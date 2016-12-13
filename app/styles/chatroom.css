@@ -3,6 +3,7 @@
 	float: left;
 	width: 70%;
 	height: 100vh;
+	background-color: #edf2f9;
 }
 
 .chatMessage {
@@ -10,5 +11,5 @@
 }
 
 .even {
-	background-color: #edf2f9;
+	background-color: #f7f7f7;
 }
