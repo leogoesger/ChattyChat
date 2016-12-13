@@ -1,15 +1,21 @@
-html body{
-    height: 100vh;
+html{
+    height: 100%;
     margin: 0px 0px 0px 0px;
     font-family:verdana;
+}
+body{
+	height:100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0 0 0 0;
 }
 
 .navbar{
 	display: inline-block;
 	float: left;
 	background-color: #F2F3F4;
+	margin: 0px 0px 0px 0px;
 	padding-top: 20px;
-	width: 300px;
+	width: 30%;
 	height: 100%;
 }
 
@@ -31,7 +37,7 @@ html body{
 	margin-left: 60px;
 }
 
-.chat-room{
+.chat-room-list{
 	font-size: 1rem;
 	margin-top: 10px;
 	margin-left: 10px;
