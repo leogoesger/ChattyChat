@@ -12,8 +12,6 @@
       });
     }
 
-    Room.currentRoom = null;
-
     Room.setRoom = function(room){
       Room.currentRoom = room;
     }
