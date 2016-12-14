@@ -1,13 +1,14 @@
 (function() {
-  function Cookies($cookies) {
+  function Cookies($cookies, $uibModal) {
     var currentUser = $cookies.get('blocChatCurrentUser');
     if (!currentUser || currentUser === '') {
-      // Do something to allow users to set their username
-      console.log("cokies")
+      $uibModal.open({
+        
+      })
     }
   }
 
   angular
     .module('blocChat')
-    .run(['$cookies', Cookies]);
+    .run(['$cookies', '$uibModal', Cookies]);
 })();

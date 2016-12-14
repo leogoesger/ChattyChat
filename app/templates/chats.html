@@ -1,7 +1,7 @@
 <div class="chatroom">
 	<div><h4>{{chat.room.currentRoom['Name']}}</h4></div>
 
-	<div ng-repeat="chat in chat.message.msg" class="chatMessage"ng-class="{even: $index%2 === 0}">
+	<div ng-repeat="chat in chat.message.msg" class="chatMessage" ng-class="{even: $index%2 === 0}">
 		{{chat["userName"]}} @ {{chat["sentAt"]}} <br />
 		{{ chat["content"] }}
 	</div>

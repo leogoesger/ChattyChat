@@ -7,10 +7,11 @@
 	    var messages = $firebaseArray(refNew);
 	    Message.msg = messages;
     };
-
+/*
     ref.on("value", function(){
     	console.log("changed")
     });
+*/
 		
     return Message;
   }
