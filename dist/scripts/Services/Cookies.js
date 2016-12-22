@@ -2,9 +2,11 @@
   function Cookies($cookies, $uibModal) {
     var currentUser = $cookies.get('blocChatCurrentUser');
     if (!currentUser || currentUser === '') {
+      console.log("Cookies")
+      /*
       $uibModal.open({
         
-      })
+      })*/
     }
   }
 
