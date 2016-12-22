@@ -3,10 +3,12 @@
     var currentUser = $cookies.get('blocChatCurrentUser');
     if (!currentUser || currentUser === '') {
       console.log("Cookies")
-      /*
-      $uibModal.open({
-        
-      })*/
+      
+      var modal = $uibModal.open({
+        templateUrl: '/templates/modal.html',
+        controller: 'ModalCtrl as modal',
+        size: 'sm'
+      });
     }
   }
 
