@@ -5,4 +5,10 @@
 		{{chat["userName"]}} @ {{chat["sentAt"]}} <br />
 		{{ chat["content"] }}
 	</div>
+	<div class="message-box">
+		<input type="text" ng-model="newMessage" /><br />
+	    <div class="send-message">
+	    	<button type="submit" ng-click="chat.send(newMessage)">Submit</button>
+	    </div>
+	</div>
 </div>

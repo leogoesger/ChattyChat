@@ -2,7 +2,10 @@
   function Cookies($rootScope, $cookies, $uibModal) {
     $cookies.remove('blocChatCurrentUser');
     var currentUser = $cookies.get('blocChatCurrentUser');
-    console.log(currentUser);
+    
+    Cookies.sayhello = function(){
+      console.log("say hello")
+    }
 
     if (!currentUser || currentUser === '') {
       $rootScope.modal = $uibModal.open({
@@ -14,6 +17,8 @@
         keyboard: 'false'
       });
     }
+    
+    return Cookies;
   }
 
   angular

@@ -5,6 +5,10 @@
      	this.message = Message;
      	this.class = "odd";
 
+          this.send = function(newMessage){
+               Message.send(newMessage);
+          };
+
      	this.appliedClass = function(){
      		if(this.class){
      			this.class = false;
