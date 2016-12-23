@@ -1,18 +1,22 @@
 (function() {
-  function Cookies($cookies, $uibModal) {
+  function Cookies($rootScope, $cookies, $uibModal) {
+    $cookies.remove('blocChatCurrentUser');
     var currentUser = $cookies.get('blocChatCurrentUser');
+    console.log(currentUser);
+
     if (!currentUser || currentUser === '') {
-      console.log("Cookies")
-      
-      var modal = $uibModal.open({
+      $rootScope.modal = $uibModal.open({
         templateUrl: '/templates/modal.html',
-        controller: 'ModalCtrl as modal',
-        size: 'sm'
+        controller: 'ModalCtrl',
+        controllerAs: 'modal',
+        size: 'sm',
+        backdrop: 'static',
+        keyboard: 'false'
       });
     }
   }
 
   angular
     .module('blocChat')
-    .run(['$cookies', '$uibModal', Cookies]);
+    .run(['$rootScope', '$cookies', '$uibModal', Cookies]);
 })();

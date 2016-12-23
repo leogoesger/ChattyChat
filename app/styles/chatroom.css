@@ -1,7 +1,7 @@
 .chatroom {
 	display: inline-block;
-	float: left;
-	width: 70%;
+	float:left;
+	width: 65%;
 	height: 100vh;
 	background-color: #edf2f9;
 }

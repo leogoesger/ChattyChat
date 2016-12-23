@@ -1,13 +1,31 @@
-.modal{
-	margin-left: 40px;
-	margin-top: 50px;
-	float: left;
-	height: 140px;
-	width: 400px;
-	background-color: #F2F3F4;
+.modal-form{
+	text-align: center;
+	height: auto;
 }
 
-.modal form{
-	width: 50%;
-	margin: 0 auto;
+.modal-form :first-child{
+	margin-top: 15px;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 30px;
+}
+
+.modal-form :nth-child(2){
+	text-align: left;
+	font-weight: none;
+	margin-left: 30px;
+}
+
+.modal-form input{
+	width:80%;
+	height: 40px;
+	margin-bottom: 5px;
+}
+
+.modal-form button{
+	padding: 10px;
+	width: 80%;
+	height: 40px;
+	margin-bottom: 15px;
 }

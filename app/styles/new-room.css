@@ -1,0 +1,18 @@
+.new-room{
+	margin-left: 40px;
+	margin-top: 50px;
+	float: left;
+	height: auto;
+	width: 400px;
+	background-color: #F2F3F4;
+}
+
+.new-room form{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.submission{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}

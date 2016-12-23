@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/modal.css">
     <link rel="stylesheet" href="./styles/chatroom.css">
+    <link rel="stylesheet" href="./styles/new-room.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
 	<div class="navbar"> <!-- navigation bar -->
-        <a ui-sref="landing" class="logo">Bloc Chat</a>
-        <button ui-sref="room" class="room-button">New Room</button>
+		<div class="logo"><a ui-sref="landing">Bloc Chat</a></div>
+		<div class="room-button"><button ui-sref="room">New Room</button></div>
         <div ui-view="chatRooms"></div>
     </div>
     <div ui-view="content"></div>
@@ -23,6 +25,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
 	<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
 	<script>
 	  var config = {
 	    apiKey: "AIzaSyBxv7DRYCRm1a3GhU2ioIk2LFtokDxH2Gw",
