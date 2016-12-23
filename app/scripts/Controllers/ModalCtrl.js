@@ -2,9 +2,11 @@
      function ModalCtrl($rootScope, $cookies) {
      	
      	this.updateCookie = function(name){
-     		$cookies.put('blocChatCurrentUser', name);
-     		$rootScope.modal.close();
-     		$rootScope.currentUser = name; 
+     		if (name){
+     			$cookies.put('blocChatCurrentUser', name);
+     			$rootScope.modal.close();
+     			$rootScope.currentUser = name; 
+     		}
      	}
      };
  
