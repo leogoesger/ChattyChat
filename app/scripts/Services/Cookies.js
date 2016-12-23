@@ -2,10 +2,7 @@
   function Cookies($rootScope, $cookies, $uibModal) {
     $cookies.remove('blocChatCurrentUser');
     var currentUser = $cookies.get('blocChatCurrentUser');
-    
-    Cookies.sayhello = function(){
-      console.log("say hello")
-    }
+    console.log(new Date)
 
     if (!currentUser || currentUser === '') {
       $rootScope.modal = $uibModal.open({
