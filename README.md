@@ -10,4 +10,4 @@ Chatty Chat is a live chat room application that uses Angular JS two-way data bi
 - Users can set his/her **username** to display in chat rooms
 - Users can **send messages** associated with his/her username in a chat room
 
-![screenshot](./bloc-chat-new-room-modal.jpg=100x)
+![screenshot](./bloc-chat-new-room-modal.jpg)
