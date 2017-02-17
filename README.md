@@ -55,3 +55,22 @@ To associate messages with room id, each message object in the Firebase database
 ```
 The last property, `roomId`, references the room where the message was sent. The ID is generated every time an object saves to Firebase, and can be viewed on the Firebase web interface.
 
+###Set Username
+Angular cookies module is included via a `<script>` tag in `index.html`, and the `ngCookies` modul needs to be injected into Anuglar app's dependency array. Using `.run()` block, a username is set at the time the app is initialized. 
+```
+  (function() {
+    function BlocChatCookies($cookies) {
+      var currentUser = $cookies.get('blocChatCurrentUser');
+      if (!currentUser || currentUser === '') {
+        ...
+      }
+    }
+
+    angular
+      .module('blocChat')
+      .run(['$cookies', BlocChatCookies]);
+  })();
+```
+
+###Send Messages
+A `send` method is added to `Message` factory. To make sure the messages are associated with their username, we can propulate the username with the current user's username by injecting the `$cookies` service and referencing the current user object on it.
