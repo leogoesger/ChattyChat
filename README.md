@@ -41,6 +41,7 @@ Useing UI Bootstraps `$uibModal` service, I defined a method for toggling a moda
 
 ###List Messages
 ![screenshot](./messages.png)
+
 A list of messages are helt in a container to the right of the list of avaiable chat rooms. The active room is stored in a `$scope` object in the main controller, so the title of the active room changes every time you visit a different room. The active room is triggered by clicking on the name of the room in the sidebar.
 To associate messages with room id, each message object in the Firebase database should have four properties:
 ```
