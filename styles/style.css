@@ -1,0 +1,67 @@
+html{
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    font-family:verdana;
+}
+body{
+	height:100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0 0 0 0;
+}
+
+.navbar{
+	display: inline-block;
+	float: left;
+	background-color: #F2F3F4;
+	margin: 0px 0px 0px 0px;
+	padding-top: 40px;
+	width: 35%;
+	height: 100%;
+}
+
+.logo a{
+	display: inline-block;
+	float: left;
+	font-size: 2rem;
+	font-weight: bold; 
+	font-family:verdana;
+	color: black;
+	position: relative;
+	margin-left: 5px;
+}
+
+.room-button button{
+	display: inline-block;
+	font-size: 1rem;
+	margin-left: 20px;
+	border-radius: 5px;
+	width: 100px;
+	background-color: #F2EFEF;
+}
+
+.chat-room-list{
+	font-size: 1.5rem;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+h4 {
+	margin: 0px 0px 20px 0px;
+	padding: 20px 0px 0px 0px;
+}
