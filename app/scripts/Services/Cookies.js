@@ -6,7 +6,7 @@
 
     if (!currentUser || currentUser === '') {
       $rootScope.modal = $uibModal.open({
-        templateUrl: '/templates/modal.html',
+        templateUrl: '/app/templates/modal.html',
         controller: 'ModalCtrl',
         controllerAs: 'modal',
         size: 'sm',
