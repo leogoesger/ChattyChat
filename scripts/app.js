@@ -15,11 +15,11 @@
               },
             views: {
                 'chatRooms': {
-                    templateUrl: '/templates/rooms.html',
+                    templateUrl: './templates/rooms.html',
                     controller: 'LandingCtrl as landing'
                 },
                 'content': {
-                    templateUrl: '/templates/landing.html',
+                    templateUrl: './templates/landing.html',
                     controller: 'LandingCtrl as landing'
                 }
             }
@@ -33,11 +33,11 @@
               },
              views: {
                 'chatRooms': {
-                    templateUrl: '/templates/rooms.html',
+                    templateUrl: './templates/rooms.html',
                     controller: 'LandingCtrl as landing'
                 },
                 'content': {
-                    templateUrl: '/templates/newRoom.html',
+                    templateUrl: './templates/newRoom.html',
                     controller: 'NewRoomCtrl as newRoom'
                 }
             }
@@ -51,11 +51,11 @@
               },
              views: {
                 'chatRooms': {
-                    templateUrl: '/templates/rooms.html',
+                    templateUrl: './templates/rooms.html',
                     controller: 'LandingCtrl as landing'
                 },
                 'content': {
-                    templateUrl: '/templates/chats.html',
+                    templateUrl: './templates/chats.html',
                     controller: 'ChatRoomCtrl as chat'
                 }
             }
