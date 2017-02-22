@@ -70,9 +70,19 @@ module.exports = function(grunt) {
             }
         },
 
+        'gh-pages': {
+            options: {
+              base: 'dist'
+            },
+            src: ['**']
+        },
+
         clean: ['./dist']
+
+        
     });
 
+    grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
