@@ -15,11 +15,11 @@
               },
             views: {
                 'chatRooms': {
-                    templateUrl: '/app/templates/rooms.html',
+                    templateUrl: './templates/rooms.html',
                     controller: 'LandingCtrl as landing'
                 },
                 'content': {
-                    templateUrl: '/app/templates/landing.html',
+                    templateUrl: './templates/landing.html',
                     controller: 'LandingCtrl as landing'
                 }
             }
