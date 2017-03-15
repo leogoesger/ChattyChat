@@ -1,6 +1,6 @@
 # Chatty Chat
 
-###Overview
+### Overview
 Chatty Chat is a live chat room application that uses Angular JS two-way data binding with Firebase. Results in a threeway synchronization to send and receive  messages in real time.
 
 
